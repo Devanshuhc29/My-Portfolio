@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <link rel="icon" href="data:,">
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills — Devanshu Chheda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css"/>
+  <link rel="stylesheet" href="css/layout.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
+</head>
+<body>
+  <a href="#main" class="sr-only">Skip to main content</a>
+
+  <header class="navbar">
+    <nav class="navbar__inner" aria-label="Main navigation">
+      <a href="index.html" class="navbar__logo" aria-label="Home">
+        <span>Ho<span class="accent">me</span></span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="index.html#about">About</a></li><li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li><li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li><li><a href="certifications.html">Certifications</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme"></button>
+        <button class="menu-btn" id="menu-btn" aria-label="Open menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" role="dialog" aria-modal="true">
+    <button class="mobile-nav__close" id="nav-close" aria-label="Close menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    <a href="index.html#about">About</a><a href="skills.html">Skills</a><a href="projects.html">Projects</a>
+    <a href="experience.html">Experience</a><a href="education.html">Education</a>
+    <a href="certifications.html">Certifications</a><a href="contact.html">Contact</a>
+  </div>
+
+  <main id="main" style="padding-top:80px;">
+    <section class="alt-bg">
+      <div class="container--wide">
+        <div class="section-header fade-in">
+          <div class="section-header__eyebrow">Technical Expertise</div>
+          <h2>Soft &amp; Tech Skills</h2>
+        </div>
+
+        <!-- Progress rings -->
+        <div class="rings-row">
+          <!-- Ring helper: circ = 2π×r, r = (size-stroke)/2 = (80-6)/2 = 37 → circ ≈ 232.48 -->
+          <div class="ring-wrap fade-in">
+            <svg class="skill-ring" width="80" height="80" viewBox="0 0 80 80" aria-label="Git 82%">
+              <circle cx="40" cy="40" r="37" fill="none" stroke="var(--surface-dyn)" stroke-width="6"/>
+              <circle class="ring-fill" cx="40" cy="40" r="37" fill="none" stroke="var(--accent)" stroke-width="6"
+                stroke-dasharray="232.48" stroke-dashoffset="232.48" stroke-linecap="round"
+                transform="rotate(-90 40 40)" data-pct="80" data-circ="232.48"
+                style="transition:stroke-dashoffset 1.2s cubic-bezier(0.16,1,0.3,1)"/>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-size:.85rem;font-weight:700;fill:var(--text);font-family:var(--font-body)">80%</text>
+            </svg>
+            <span>English (Written)</span>
+          </div>
+          <div class="ring-wrap fade-in">
+            <svg class="skill-ring" width="80" height="80" viewBox="0 0 80 80" aria-label="Pandas 80%">
+              <circle cx="40" cy="40" r="37" fill="none" stroke="var(--surface-dyn)" stroke-width="6"/>
+              <circle class="ring-fill" cx="40" cy="40" r="37" fill="none" stroke="var(--blue)" stroke-width="6"
+                stroke-dasharray="232.48" stroke-dashoffset="232.48" stroke-linecap="round"
+                transform="rotate(-90 40 40)" data-pct="60" data-circ="232.48"
+                style="transition:stroke-dashoffset 1.2s cubic-bezier(0.16,1,0.3,1)"/>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-size:.85rem;font-weight:700;fill:var(--text);font-family:var(--font-body)">60%</text>
+            </svg>
+            <span>English (Spoken)</span>
+          </div>
+          <div class="ring-wrap fade-in">
+            <svg class="skill-ring" width="80" height="80" viewBox="0 0 80 80" aria-label="Git 82%">
+              <circle cx="40" cy="40" r="37" fill="none" stroke="var(--surface-dyn)" stroke-width="6"/>
+              <circle class="ring-fill" cx="40" cy="40" r="37" fill="none" stroke="var(--accent)" stroke-width="6"
+                stroke-dasharray="232.48" stroke-dashoffset="232.48" stroke-linecap="round"
+                transform="rotate(-90 40 40)" data-pct="95" data-circ="232.48"
+                style="transition:stroke-dashoffset 1.2s cubic-bezier(0.16,1,0.3,1)"/>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-size:.85rem;font-weight:700;fill:var(--text);font-family:var(--font-body)">95%</text>
+            </svg>
+            <span>Hindi</span>
+          </div>
+          <div class="ring-wrap fade-in">
+            <svg class="skill-ring" width="80" height="80" viewBox="0 0 80 80" aria-label="Pandas 80%">
+              <circle cx="40" cy="40" r="37" fill="none" stroke="var(--surface-dyn)" stroke-width="6"/>
+              <circle class="ring-fill" cx="40" cy="40" r="37" fill="none" stroke="var(--blue)" stroke-width="6"
+                stroke-dasharray="232.48" stroke-dashoffset="232.48" stroke-linecap="round"
+                transform="rotate(-90 40 40)" data-pct="100" data-circ="232.48"
+                style="transition:stroke-dashoffset 1.2s cubic-bezier(0.16,1,0.3,1)"/>
+              <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" style="font-size:.85rem;font-weight:700;fill:var(--text);font-family:var(--font-body)">100%</text>
+            </svg>
+            <span>Marathi</span>
+          </div>
+        </div>
+
+        <!-- Skill bars -->
+        <div class="skills-grid fade-in">
+          <div>
+            <div class="skill-category__title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Programming Languages
+            </div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Python</span><span class="skill-item__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="75"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">C</span><span class="skill-item__pct">75%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="75"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">C++</span><span class="skill-item__pct">60%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="60"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">JavaScript</span><span class="skill-item__pct">60%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="60"></div></div></div>
+          </div>
+          <div>
+            <div class="skill-category__title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              AI / ML &amp; Data Science
+            </div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">NumPy / Pandas</span><span class="skill-item__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="80"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Machine Learning</span><span class="skill-item__pct">55%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="55"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Scikit-learn</span><span class="skill-item__pct">55%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="55"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Data Visualisation</span><span class="skill-item__pct">55%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="55"></div></div></div>
+          </div>
+          <div>
+            <div class="skill-category__title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Web &amp; Tools
+            </div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">HTML / CSS</span><span class="skill-item__pct">95%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="95"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Git / GitHub VCS</span><span class="skill-item__pct">80%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="80"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">Flask</span><span class="skill-item__pct">50%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="50"></div></div></div>
+            <div class="skill-item"><div class="skill-item__top"><span class="skill-item__name">AWS (Basics)</span><span class="skill-item__pct">45%</span></div><div class="skill-bar__track"><div class="skill-bar__fill" data-pct="45"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container--wide footer__inner">
+      <p class="footer__copy">© 2026 Devanshu Chheda. All rights reserved.</p>
+      <div class="footer__socials">
+        <a href="https://www.linkedin.com/in/devanshu-chheda-57a9bb286/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a href="https://github.com/devanshuchheda06" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+        <a href="https://github.com/Devanshuhc29" target="_blank" rel="noopener noreferrer" aria-label="GitHub Alt"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+      </div>
+    </div>
+  </footer>
+  <div class="toast-container" id="toast-container" aria-live="polite"></div>
+  <script src="js/theme.js"></script><script src="js/ui.js"></script>
+</body></html>
